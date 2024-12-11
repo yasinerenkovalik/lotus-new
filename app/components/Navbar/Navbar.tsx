@@ -28,7 +28,9 @@ function classNames(...classes: string[]) {
 const CustomLink = ({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) => {
     return (
         <Link href={href} passHref>
+         
             <span
+            
                 onClick={onClick}
                 className="px-3 py-4 text-lg font-normal"
             >

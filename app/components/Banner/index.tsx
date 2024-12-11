@@ -11,7 +11,7 @@ const Banner = () => {
                     <div className='col-span-6 flex flex-col justify-evenly'>
                         <div className='flex gap-2 mx-auto lg:mx-0'>
                             <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
-                            <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Get 30% off on first enroll</h3>
+                            <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Get 1234213% off on first enroll</h3>
                         </div>
                         <h1 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0'>Advance your engineering skills with us.</h1>
                         <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-5 lg:pt-0'>Build skills with our courses and mentor from world-class companies.</h3>

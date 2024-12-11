@@ -15,7 +15,7 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
+        name: "yasin eren",
         profession: 'CEO, Parkview Int.Ltd',
         comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
         imgSrc: '/assets/testimonial/user.svg',
