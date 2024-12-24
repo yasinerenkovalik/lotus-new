@@ -1,0 +1,552 @@
+:root {
+  /* Lotus çiçeği tonları */
+  --primary: #F8E1E8;    /* Açık lotus pembesi */
+  --secondary: #E4B1AB;  /* Orta lotus pembesi */
+  --accent: #D88C9A;     /* Koyu lotus pembesi */
+  --bg-light: #FFF5F7;   /* Çok açık pembe arkaplan */
+  --bg-white: #ffffff;   /* Beyaz */
+  --text: #4A4A4A;       /* Koyu gri metin */
+  
+  /* RGB değerleri */
+  --primary-rgb: 248, 225, 232;
+  --secondary-rgb: 228, 177, 171;
+  --accent-rgb: 216, 140, 154;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header düzeltmesi */
+.header {
+  width: 100vw;
+  padding: 1.2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 10px rgba(255, 151, 183, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+  z-index: 1000;
+  border-bottom: none;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Aktif link için stil */
+.nav-links a.active {
+  color: var(--secondary);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Mobil menü için */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  color: var(--secondary);
+  transform: scale(1.1);
+}
+
+/* Mobil görünüm için stiller */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 2px solid rgba(var(--accent-rgb), 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background: rgba(var(--secondary-rgb), 0.1);
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Hero düzeltmesi */
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                    url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2198&auto=format&fit=crop');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.hero-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.cta-button {
+  padding: 1.2rem 3rem;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+}
+
+/* Services düzeltmesi */
+.services {
+  width: 100vw;
+  padding: 6rem 0;
+  background-color: var(--bg-light);
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.services-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 2.5rem;
+  background-color: var(--bg-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Contact düzeltmesi */
+.contact {
+  width: 100vw;
+  padding: 6rem 0;
+  background-color: var(--bg-white);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: var(--bg-light);
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Responsive düzeltmeler */
+@media (max-width: 768px) {
+  .hero-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .services-grid {
+    width: 95%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    padding: 0 1rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Neden Biz Bölümü */
+.why-us {
+  padding: 6rem 2rem;
+  background-color: var(--bg-white);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  color: var(--text);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.feature-item h3 {
+  color: var(--secondary);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+/* Testimonials Bölümü */
+.testimonials {
+  padding: 6rem 2rem;
+  background-color: var(--bg-light);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin: 1rem 0;
+  color: var(--text);
+}
+
+.testimonial-card h4 {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* İstatistikler Bölümü */
+.stats {
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, var(--secondary), var(--accent));
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .features-grid,
+  .testimonials-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .stats {
+    padding: 3rem 1rem;
+  }
+}
+
+.why-us h2,
+.testimonials h2,
+.stats h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--secondary);
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.why-us h2::after,
+.testimonials h2::after,
+.stats h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.stats h2 {
+  color: white;
+}
+
+.stats h2::after {
+  background: white;
+}
