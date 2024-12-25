@@ -16,6 +16,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"></link>
       <header className="header">
         <nav className="navbar">
           <div className="logo">

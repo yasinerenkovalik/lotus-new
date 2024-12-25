@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Navbar() {
@@ -19,9 +19,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <h1>Lotus Organizasyon</h1>
-      </div>
+      <NavLink to="/"  className="logo" end>
+        Lotus Organizasyon
+      </NavLink>
       
       {isMobile && (
         <button 

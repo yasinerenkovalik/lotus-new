@@ -21,6 +21,8 @@ function OrganizationDetail() {
   return (
     <div className="organization-detail-container">
       <div className="detail-hero">
+
+
         <img 
           src={details.imageUrl} 
           alt={details.title} 
