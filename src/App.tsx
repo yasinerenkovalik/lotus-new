@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Contact from './pages/Contact';
 import Gallery from './components/Gallery';
 import Organizations from './pages/Organizations';
@@ -8,6 +8,11 @@ import './App.css';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Menüyü kapatma fonksiyonu
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <>
@@ -25,10 +30,10 @@ function Layout({ children }: { children: React.ReactNode }) {
           </button>
 
           <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-            <NavLink to="/" end>Ana Sayfa</NavLink>
-            <NavLink to="/gallery">Galeri</NavLink>
-            <NavLink to="/organizations">Organizasyonlar</NavLink>
-            <NavLink to="/contact">İletişim</NavLink>
+            <NavLink to="/" end onClick={closeMobileMenu}>Ana Sayfa</NavLink>
+            <NavLink to="/gallery" onClick={closeMobileMenu}>Galeri</NavLink>
+            <NavLink to="/organizations" onClick={closeMobileMenu}>Organizasyonlar</NavLink>
+            <NavLink to="/contact" onClick={closeMobileMenu}>İletişim</NavLink>
           </div>
         </nav>
       </header>
@@ -40,6 +45,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 function HomePage() {
   return (
     <>
+    --Özge Çalışkan
       <div className="hero">
         <div className="hero-content">
           <h1>Unutulmaz Anlar İçin Mükemmel Organizasyonlar</h1>
@@ -120,17 +126,47 @@ function HomePage() {
 }
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    // Sistem temasını kontrol et
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  });
+
+  useEffect(() => {
+    // Sistem tema değişikliğini dinle
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    document.documentElement.setAttribute('data-theme', theme);
+
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/organizations" element={<Organizations />} />
-          <Route path="/organizations/:id" element={<OrganizationDetail />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Layout>
+      <div className="app">
+        <Layout>
+          <button className="theme-toggle" onClick={toggleTheme}>
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/organizations" element={<Organizations />} />
+            <Route path="/organizations/:id" element={<OrganizationDetail />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Layout>
+      </div>
     </Router>
   );
 }

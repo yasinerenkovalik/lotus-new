@@ -1,16 +1,31 @@
-:root {
-  /* Lotus çiçeği tonları */
+/* Tema değişkenleri */
+:root[data-theme="light"] {
   --primary: #F8E1E8;    /* Açık lotus pembesi */
   --secondary: #E4B1AB;  /* Orta lotus pembesi */
   --accent: #D88C9A;     /* Koyu lotus pembesi */
   --bg-light: #FFF5F7;   /* Çok açık pembe arkaplan */
   --bg-white: #ffffff;   /* Beyaz */
   --text: #4A4A4A;       /* Koyu gri metin */
-  
-  /* RGB değerleri */
-  --primary-rgb: 248, 225, 232;
-  --secondary-rgb: 228, 177, 171;
-  --accent-rgb: 216, 140, 154;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --card-bg: white;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+:root[data-theme="dark"] {
+  --primary: #2C1810;    /* Koyu kahve */
+  --secondary: #D88C9A;  /* Lotus pembesi */
+  --accent: #E4B1AB;     /* Açık lotus pembesi */
+  --bg-light: #1A1A1A;   /* Koyu arkaplan */
+  --bg-white: #2D2D2D;   /* Biraz daha açık arkaplan */
+  --text: #E0E0E0;       /* Açık gri metin */
+  --nav-bg: rgba(29, 29, 29, 0.95);
+  --card-bg: #2D2D2D;
+  --shadow: rgba(0,0,0,0.3);
+}
+
+/* Tema geçiş animasyonu */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
@@ -192,7 +207,7 @@ body, html {
   margin-top: 0;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  background-image: 
                     url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2198&auto=format&fit=crop');
   background-position: center;
   background-repeat: no-repeat;
@@ -549,4 +564,67 @@ body, html {
 
 .stats h2::after {
   background: white;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px var(--shadow);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+/* Karanlık tema için ek düzenlemeler */
+[data-theme="dark"] {
+  .navbar {
+    background: var(--nav-bg);
+  }
+
+  .hero-content {
+    background: rgba(45, 45, 45, 0.85);
+  }
+
+  .service-card,
+  .info-card,
+  .testimonial-card,
+  .feature-item,
+  .business-hours {
+    background: var(--card-bg);
+    color: var(--text);
+  }
+
+  .hours-grid div {
+    border-color: rgba(255,255,255,0.1);
+  }
+
+  .nav-links a:hover {
+    background: rgba(var(--secondary-rgb), 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
 }
