@@ -3,7 +3,7 @@ import '../styles/Contact.css';
 
 function Contact() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/905555555555', '_blank'); // WhatsApp numaranızı buraya ekleyin
+    window.open('https://wa.me/905526858141', '_blank'); // WhatsApp numaranızı buraya ekleyin
   };
 
   return (
@@ -16,14 +16,14 @@ function Contact() {
             <FaMapMarkerAlt className="icon" />
             <h3>Adres</h3>
             <p>Lotus Organizasyon</p>
-            <p>Bağdat Caddesi No: 123</p>
-            <p>Kadıköy / İstanbul</p>
+            <p>İstiklal Caddesi No: 49</p>
+            <p>Kocaeli / Darıca</p>
           </div>
 
           <div className="info-card">
             <FaPhone className="icon" />
             <h3>Telefon</h3>
-            <p>+90 (555) 555 55 55</p>
+            <p>+90 (552) 685 81 41</p>
             <p>+90 (216) 555 55 55</p>
           </div>
 
