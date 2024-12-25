@@ -10,6 +10,10 @@ function Contact() {
     window.open('https://instagram.com/lotusorganizasyon_', '_blank');
   };
 
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+905526858141';
+  };
+
   // Google Maps Embed URL
   const locationUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.248707236021!2d29.370675398777706!3d40.79506202030919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadf712c25e571%3A0x2df43c5267816cd4!2sLotus%20Organizasyon!5e0!3m2!1str!2str!4v1735135532697!5m2!1str!2str";
 
@@ -40,7 +44,12 @@ function Contact() {
           <div className="info-card">
             <FaPhone className="icon" />
             <h3>Telefon</h3>
-            <p>+90 (552) 685 81 41</p>
+            <p 
+              onClick={handlePhoneClick} 
+              className="clickable-phone"
+            >
+              +90 (552) 685 81 41
+            </p>
           </div>
 
           <div className="info-card">

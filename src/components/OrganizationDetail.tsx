@@ -1,11 +1,14 @@
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import { organizationDetails } from '../data/organizationData';
+import ImageModal from './ImageModal';
 import '../styles/OrganizationDetail.css';
 
 function OrganizationDetail() {
   const { id } = useParams();
   const organizationId = Number(id);
   const details = organizationDetails[organizationId];
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   if (!details) {
     return <div className="not-found">Organizasyon bulunamadı</div>;
@@ -14,7 +17,11 @@ function OrganizationDetail() {
   return (
     <div className="organization-detail-container">
       <div className="detail-hero">
-        <img src={details.imageUrl} alt={details.title} />
+        <img 
+          src={details.imageUrl} 
+          alt={details.title} 
+          onClick={() => setSelectedImage(details.imageUrl)}
+        />
         <h1>{details.title}</h1>
       </div>
 
@@ -52,7 +59,13 @@ function OrganizationDetail() {
           <h2>Galeri</h2>
           <div className="gallery-grid">
             {details.gallery.map((image, index) => (
-              <img key={index} src={image} alt={`${details.title} ${index + 1}`} />
+              <img 
+                key={index} 
+                src={image} 
+                alt={`${details.title} ${index + 1}`}
+                onClick={() => setSelectedImage(image)}
+                className="gallery-image"
+              />
             ))}
           </div>
         </section>
@@ -63,6 +76,13 @@ function OrganizationDetail() {
           <button className="contact-button">İletişime Geçin</button>
         </section>
       </div>
+
+      {selectedImage && (
+        <ImageModal
+          imageUrl={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }

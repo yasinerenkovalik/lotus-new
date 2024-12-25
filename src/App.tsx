@@ -43,14 +43,27 @@ function Layout({ children }: { children: React.ReactNode }) {
 }
 
 function HomePage() {
+  const handleWhatsAppClick = () => {
+    // WhatsApp mesaj metni
+    const message = "Merhaba, organizasyon hakkında bilgi almak istiyorum.";
+    // URL encode edilmiş mesaj
+    const encodedMessage = encodeURIComponent(message);
+    // WhatsApp linki
+    window.open(`https://wa.me/905526858141?text=${encodedMessage}`, '_blank');
+  };
+
   return (
     <>
-    --Özge Çalışkan
       <div className="hero">
         <div className="hero-content">
           <h1>Unutulmaz Anlar İçin Mükemmel Organizasyonlar</h1>
           <p>Düğün, nişan, kurumsal etkinlikler ve daha fazlası...</p>
-          <button className="cta-button">Hemen Teklif Alın</button>
+          <button 
+            className="cta-button"
+            onClick={handleWhatsAppClick}
+          >
+            Hemen Teklif Alın
+          </button>
         </div>
       </div>
 

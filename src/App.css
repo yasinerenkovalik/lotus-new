@@ -1,25 +1,25 @@
 /* Tema değişkenleri */
 :root[data-theme="light"] {
-  --primary: #F8E1E8;    /* Açık lotus pembesi */
-  --secondary: #E4B1AB;  /* Orta lotus pembesi */
-  --accent: #D88C9A;     /* Koyu lotus pembesi */
-  --bg-light: #FFF5F7;   /* Çok açık pembe arkaplan */
+  --primary: #FF9EAA;    /* Daha canlı pembe */
+  --secondary: #FF6B81;  /* Canlı mercan */
+  --accent: #FF4757;     /* Canlı kırmızı */
+  --bg-light: #FFF5F6;   /* Açık arka plan */
   --bg-white: #ffffff;   /* Beyaz */
-  --text: #4A4A4A;       /* Koyu gri metin */
+  --text: #2F3542;       /* Koyu metin */
   --nav-bg: rgba(255, 255, 255, 0.95);
   --card-bg: white;
   --shadow: rgba(0,0,0,0.1);
 }
 
 :root[data-theme="dark"] {
-  --primary: #2C1810;    /* Koyu kahve */
-  --secondary: #D88C9A;  /* Lotus pembesi */
-  --accent: #E4B1AB;     /* Açık lotus pembesi */
-  --bg-light: #1A1A1A;   /* Koyu arkaplan */
-  --bg-white: #2D2D2D;   /* Biraz daha açık arkaplan */
-  --text: #E0E0E0;       /* Açık gri metin */
-  --nav-bg: rgba(29, 29, 29, 0.95);
-  --card-bg: #2D2D2D;
+  --primary: #FF6B81;    /* Canlı mercan */
+  --secondary: #FF4757;  /* Canlı kırmızı */
+  --accent: #FF9EAA;     /* Canlı pembe */
+  --bg-light: #2F3542;   /* Koyu arka plan */
+  --bg-white: #2D3436;   /* Biraz daha açık arka plan */
+  --text: #F1F2F6;       /* Açık metin */
+  --nav-bg: rgba(47, 53, 66, 0.95);
+  --card-bg: #2D3436;
   --shadow: rgba(0,0,0,0.3);
 }
 

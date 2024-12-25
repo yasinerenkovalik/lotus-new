@@ -210,6 +210,17 @@
   transform: scale(1.05);
 }
 
+.clickable-phone {
+  cursor: pointer;
+  color: var(--accent) !important;
+  transition: all 0.3s ease;
+}
+
+.clickable-phone:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .contact-page h1 {
     font-size: 2.2rem;

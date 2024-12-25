@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { galleryData, categories } from '../data/galleryData';
+import ImageModal from './ImageModal';
 import '../styles/Gallery.css';
 
 function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('tümü');
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const filteredGallery = selectedCategory === 'tümü'
     ? galleryData
@@ -27,7 +29,11 @@ function Gallery() {
 
       <div className="gallery-grid">
         {filteredGallery.map(item => (
-          <div key={item.id} className="gallery-item">
+          <div 
+            key={item.id} 
+            className="gallery-item"
+            onClick={() => setSelectedImage(item.imageUrl)}
+          >
             <img src={item.imageUrl} alt={item.title} />
             <div className="gallery-item-overlay">
               <h3>{item.title}</h3>
@@ -36,6 +42,13 @@ function Gallery() {
           </div>
         ))}
       </div>
+
+      {selectedImage && (
+        <ImageModal
+          imageUrl={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }

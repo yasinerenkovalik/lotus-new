@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { organizations, categories } from '../data/organizationData';
+import ImageModal from '../components/ImageModal';
 import '../styles/Organizations.css';
 
 function Organizations() {
   const [selectedCategory, setSelectedCategory] = useState('tümü');
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const filteredOrganizations = selectedCategory === 'tümü'
     ? organizations
@@ -28,17 +30,30 @@ function Organizations() {
 
       <div className="organizations-grid">
         {filteredOrganizations.map(item => (
-          <Link to={`/organizations/${item.id}`} key={item.id} className="organization-card">
-            <div className="card-image">
+          <div key={item.id} className="organization-card">
+            <div 
+              className="card-image"
+              onClick={(e) => {
+                e.preventDefault();
+                setSelectedImage(item.imageUrl);
+              }}
+            >
               <img src={item.imageUrl} alt={item.title} />
             </div>
-            <div className="card-content">
+            <Link to={`/organizations/${item.id}`} className="card-content">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </div>
+
+      {selectedImage && (
+        <ImageModal
+          imageUrl={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }
