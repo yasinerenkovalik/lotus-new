@@ -144,11 +144,11 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ],
     longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti, özel gününüzü masalsı bir atmosfere dönüştürüyor. Beyaz güller ve yemyeşil yapraklarla süslenmiş çiçek tagı, sevginizi simgeleyen anlamlı bir arka plan oluşturuyor. Şeffaf detaylara sahip modern sandalyeler ve neon yazısı, unutulmaz bir ambiyans sunuyor.",
     gallery: [
-      "/src/assets/images/DSC05420.JPEG",
-      "/src/assets/images/DSC05811.JPEG",
-      "/src/assets/images/DSC05820.JPEG",
-      "/src/assets/images/DSC05831.JPEG",
-      "/src/assets/images/DSC05926.JPEG"
+      "/images/DSC05420.JPEG",
+      "/images/DSC05811.JPEG",
+      "/images/DSC05820.JPEG",
+      "/images/DSC05831.JPEG",
+      "/images/DSC05926.JPEG"
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
