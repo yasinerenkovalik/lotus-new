@@ -11,7 +11,7 @@ export interface OrganizationDetail extends Organization {
   longDescription: string;
   gallery: string[];
   pricing: string;
-  capacity: string;
+  ekstra: string;
   duration: string;
   location: string;
 }
@@ -19,10 +19,10 @@ export interface OrganizationDetail extends Organization {
 export const organizations: Organization[] = [
   {
     id: 1,
-    title: "Sahil Düğünü",
+    title: "Zişan Dekor",
     description: "Deniz manzaralı romantik düğün organizasyonu",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
+    imageUrl: "src/assets/images/DSC05820.JPEG"
   },
   {
     id: 2,
@@ -127,27 +127,33 @@ export const organizations: Organization[] = [
 export const organizationDetails: Record<number, OrganizationDetail> = {
   1: {
     id: 1,
-    title: "Sahil Düğünü",
+    title: "Zişan Dekor",
     description: "Deniz manzaralı romantik düğün organizasyonu",
     category: "düğün",
     imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070",
     features: [
-      "Deniz manzaralı mekan",
-      "Profesyonel fotoğraf çekimi",
-      "Canlı müzik",
-      "Özel dekorasyon",
-      "Catering hizmeti"
+      "4*4 METRE AYARLANABİLİR BEYAZ PERDE KURULUMU",
+      "2*2 METRE ÇİÇEK TAG KURULUMU ",
+      "4 ADET BEYAZ AHŞAP SÜTUN",
+      "2 ADET PLEKSİ ŞEFFAF ŞAMDAN",
+      "1 ADET BEYAZ AHŞAP ORTA SEHPA",
+      "NEON YAZI (KİŞİYE ÖZEL TASARLANABİLRİ)",
+      "SÖZ TEPSİ SETİ",
+      "DAMAT KAHVE SETİ",
+      "2 ADET ŞEFFAF PLEKSİ SANDALYE"
     ],
-    longDescription: "Denizin muhteşem manzarası eşliğinde, güneşin batışını izleyerek unutulmaz bir düğün töreni... Sahilde özel olarak hazırlanmış mekanımızda, profesyonel ekibimizle hayalinizdeki düğünü gerçekleştiriyoruz.",
+    longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti, özel gününüzü masalsı bir atmosfere dönüştürüyor. Beyaz güller ve yemyeşil yapraklarla süslenmiş çiçek tagı, sevginizi simgeleyen anlamlı bir arka plan oluşturuyor. Şeffaf detaylara sahip modern sandalyeler ve neon yazısı, unutulmaz bir ambiyans sunuyor.",
     gallery: [
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070",
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069",
-      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070"
+      "/src/assets/images/DSC05420.JPEG",
+      "/src/assets/images/DSC05811.JPEG",
+      "/src/assets/images/DSC05820.JPEG",
+      "/src/assets/images/DSC05831.JPEG",
+      "/src/assets/images/DSC05926.JPEG"
     ],
-    pricing: "30.000₺'den başlayan fiyatlarla",
-    capacity: "50-300 kişi",
-    duration: "Tam gün",
-    location: "İstanbul'un seçkin sahil mekanlarında"
+    pricing: "En uygun fiyatlar için iletişime geçiniz",
+    ekstra: "Fotoğraf Çekimi",
+    duration: "Kişiye Özel Neon Yazı",
+    location: "Karşılama Panosu"
   },
   2: {
     id: 2,
@@ -169,7 +175,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
     ],
     pricing: "25.000₺'den başlayan fiyatlarla",
-    capacity: "50-400 kişi",
+    ekstra: "Fotoğraf Çekimi",
     duration: "Tam gün",
     location: "İstanbul'un seçkin kır düğünü mekanlarında"
   },
@@ -193,7 +199,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070"
     ],
     pricing: "40.000₺'den başlayan fiyatlarla",
-    capacity: "100-1000 kişi",
+    ekstra: "100-1000 kişi",
     duration: "Tam gün",
     location: "İstanbul'un seçkin otellerinde"
   },
@@ -217,7 +223,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "20.000₺'den başlayan fiyatlarla",
-    capacity: "50-200 kişi",
+    ekstra: "50-200 kişi",
     duration: "Yarım gün",
     location: "İstanbul'un seçkin mekanlarında"
   },
@@ -241,7 +247,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "25.000₺'den başlayan fiyatlarla",
-    capacity: "50-150 kişi",
+    ekstra: "50-150 kişi",
     duration: "Akşam",
     location: "İstanbul'un en güzel teras mekanlarında"
   },
@@ -265,7 +271,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=2069"
     ],
     pricing: "15.000₺'den başlayan fiyatlarla",
-    capacity: "50-200 kişi",
+    ekstra: "50-200 kişi",
     duration: "Akşam",
     location: "İstanbul'un tarihi mekanlarında"
   },
@@ -289,7 +295,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=2069"
     ],
     pricing: "18.000₺'den başlayan fiyatlarla",
-    capacity: "50-250 kişi",
+    ekstra: "50-250 kişi",
     duration: "Akşam",
     location: "İstanbul'un modern mekanlarında"
   },
@@ -313,7 +319,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "20.000₺'den başlayan fiyatlarla",
-    capacity: "100-300 kişi",
+    ekstra: "100-300 kişi",
     duration: "Akşam",
     location: "İstanbul'un bahçe mekanlarında"
   },
@@ -337,7 +343,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "25.000₺'den başlayan fiyatlarla",
-    capacity: "100-400 kişi",
+    ekstra: "100-400 kişi",
     duration: "Tam gün",
     location: "İstanbul'un çocuk dostu mekanlarında"
   },
@@ -361,7 +367,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "20.000₺'den başlayan fiyatlarla",
-    capacity: "50-200 kişi",
+    ekstra: "50-200 kişi",
     duration: "Tam gün",
     location: "İstanbul'un eğlence merkezlerinde"
   },
@@ -385,7 +391,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "10.000₺'den başlayan fiyatlarla",
-    capacity: "20-100 kişi",
+    ekstra: "20-100 kişi",
     duration: "Yarım gün",
     location: "İstanbul'un özel parti mekanlarında"
   },
@@ -409,7 +415,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "12.000₺'den başlayan fiyatlarla",
-    capacity: "30-150 kişi",
+    ekstra: "30-150 kişi",
     duration: "Yarım gün",
     location: "İstanbul'un seçkin mekanlarında"
   },
@@ -433,7 +439,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=2069"
     ],
     pricing: "15.000₺'den başlayan fiyatlarla",
-    capacity: "20-50 kişi",
+    ekstra: "20-50 kişi",
     duration: "Yarım gün",
     location: "İstanbul'un butik mekanlarında"
   },
@@ -457,7 +463,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2070"
     ],
     pricing: "20.000₺'den başlayan fiyatlarla",
-    capacity: "100-500 kişi",
+    ekstra: "100-500 kişi",
     duration: "Tam gün",
     location: "İstanbul'un popüler parti mekanlarında"
   },
@@ -481,7 +487,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
     ],
     pricing: "15.000₺'den başlayan fiyatlarla",
-    capacity: "2-50 kişi",
+    ekstra: "2-50 kişi",
     duration: "Akşam",
     location: "İstanbul'un romantik mekanlarında"
   }

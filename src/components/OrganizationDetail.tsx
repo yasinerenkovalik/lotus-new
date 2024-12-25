@@ -9,6 +9,10 @@ function OrganizationDetail() {
   const organizationId = Number(id);
   const details = organizationDetails[organizationId];
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/905526858141', '_blank');
+  };
+
 
   if (!details) {
     return <div className="not-found">Organizasyon bulunamadı</div>;
@@ -30,22 +34,6 @@ function OrganizationDetail() {
           <h2>Hakkında</h2>
           <p>{details.longDescription}</p>
         </section>
-
-        <section className="detail-info">
-          <h2>Organizasyon Bilgileri</h2>
-          <div className="info-grid">
-            <div className="info-item">
-              <span>Kapasite:</span> {details.capacity}
-            </div>
-            <div className="info-item">
-              <span>Süre:</span> {details.duration}
-            </div>
-            <div className="info-item">
-              <span>Konum:</span> {details.location}
-            </div>
-          </div>
-        </section>
-
         <section className="detail-features">
           <h2>Hizmetlerimiz</h2>
           <ul>
@@ -54,6 +42,25 @@ function OrganizationDetail() {
             ))}
           </ul>
         </section>
+
+  <section className="detail-info">
+    <h2>Ekstra Hizmetlerimiz</h2>
+    <div className="info-grid">
+      <div className="info-item">
+        {details.ekstra}
+      </div>
+      <div className="info-item">
+        {details.duration}
+      </div>
+      <div className="info-item">
+      {details.location}
+      </div>
+    </div>
+  </section>
+
+
+
+     
 
         <section className="detail-gallery">
           <h2>Galeri</h2>
@@ -73,7 +80,10 @@ function OrganizationDetail() {
         <section className="detail-pricing">
           <h2>Fiyatlandırma</h2>
           <p>{details.pricing}</p>
-          <button className="contact-button">İletişime Geçin</button>
+          <button className="contact-button"  onClick={handleWhatsApp}>İletişime Geçin  </button>
+
+           
+
         </section>
       </div>
 
