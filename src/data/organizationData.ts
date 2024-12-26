@@ -29,7 +29,7 @@ export const organizations: Organization[] = [
     title: "Kır Düğünü",
     description: "Doğayla iç içe masalsı düğün organizasyonu",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070"
+    imageUrl: "/images/HazeranDekor/image00001.jpeg"
   },
   {
     id: 3,
@@ -144,11 +144,11 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ],
     longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti, özel gününüzü masalsı bir atmosfere dönüştürüyor. Beyaz güller ve yemyeşil yapraklarla süslenmiş çiçek tagı, sevginizi simgeleyen anlamlı bir arka plan oluşturuyor. Şeffaf detaylara sahip modern sandalyeler ve neon yazısı, unutulmaz bir ambiyans sunuyor.",
     gallery: [
-      "/images/DSC05420.JPEG",
-      "/images/DSC05811.JPEG",
-      "/images/DSC05820.JPEG",
-      "/images/DSC05831.JPEG",
-      "/images/DSC05926.JPEG"
+      "/images/zisandekor/DSC05420.JPEG",
+      "/images/zisandekor/DSC05811.JPEG",
+      "/images/zisandekor/DSC05820.JPEG",
+      "/images/zisandekor/DSC05831.JPEG",
+      "/images/zisandekor/DSC05926.JPEG"
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
@@ -157,10 +157,10 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   },
   2: {
     id: 2,
-    title: "Kır Düğünü",
+    title: "Hazeran Dekor",
     description: "Doğayla iç içe masalsı düğün organizasyonu",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070",
+    imageUrl: "/images/HazeranDekor/image00001.jpeg",
     features: [
       "Doğal ortamda açık hava düğünü",
       "Rustik dekorasyon",
@@ -168,11 +168,14 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       "Profesyonel fotoğraf çekimi",
       "Açık büfe ikram"
     ],
-    longDescription: "Doğanın kucağında, yeşillikler içinde masalsı bir düğün... Kır düğünü konseptimizle doğal güzellikleri düğününüze taşıyoruz. Rustik detaylar ve şık dokunuşlarla unutulmaz bir gün yaratıyoruz.",
+    longDescription: "'Daima Aşk ile' temalı bu özel dekorasyon, romantik anlarınızı unutulmaz kılmak için tasarlandı. Beyaz ve doğal tonlarla sade bir zarafet sunarken, asma yaprakları ve çiçek detaylarıyla doğallığı ön plana çıkarıyor. Neon ışıklı yazı ve minimalist oturma alanı, organizasyonlarınıza modern bir dokunuş katıyor. Bu dekor, düğün, nişan veya özel kutlamalar için mükemmel bir seçimdir.",
     gallery: [
-      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070",
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069",
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
+      "/images/HazeranDekor/image00001.jpeg",
+      "/images/HazeranDekor/image00003.jpeg",
+      "/images/HazeranDekor/image00008.jpeg",
+      "/images/HazeranDekor/image00016.jpeg",
+      "/images/HazeranDekor/image00017.jpeg",
+      "/images/HazeranDekor/image00025.jpeg"
     ],
     pricing: "25.000₺'den başlayan fiyatlarla",
     ekstra: "Fotoğraf Çekimi",
