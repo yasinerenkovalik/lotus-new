@@ -22,7 +22,7 @@ export const organizations: Organization[] = [
     title: "Zişan Dekor",
     description: "Deniz manzaralı romantik düğün organizasyonu",
     category: "düğün",
-    imageUrl: "/images/DSC05820.JPEG"
+    imageUrl: "/images/DSC05820-min.jpeg"
   },
   {
     id: 2,
@@ -33,10 +33,10 @@ export const organizations: Organization[] = [
   },
   {
     id: 3,
-    title: "Otel Düğünü",
+    title: "Güneş Dekor",
     description: "Lüks otel salonlarında şık düğün organizasyonu",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
+    imageUrl: "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.35.16.jpeg"
   },
   {
     id: 4,
@@ -144,11 +144,11 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ],
     longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti, özel gününüzü masalsı bir atmosfere dönüştürüyor. Beyaz güller ve yemyeşil yapraklarla süslenmiş çiçek tagı, sevginizi simgeleyen anlamlı bir arka plan oluşturuyor. Şeffaf detaylara sahip modern sandalyeler ve neon yazısı, unutulmaz bir ambiyans sunuyor.",
     gallery: [
-      "/images/zisandekor/DSC05420.JPEG",
-      "/images/zisandekor/DSC05811.JPEG",
-      "/images/zisandekor/DSC05820.JPEG",
-      "/images/zisandekor/DSC05831.JPEG",
-      "/images/zisandekor/DSC05926.JPEG"
+      "/images/zisandekor/DSC05420-min.jpeg",
+      "/images/zisandekor/DSC05811-min.jpeg",
+      "/images/zisandekor/DSC05820-min.jpeg",
+      "/images/zisandekor/DSC05831-min.jpeg",
+      "/images/zisandekor/DSC05926-min.jpeg"
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
