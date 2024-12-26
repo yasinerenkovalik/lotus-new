@@ -27,7 +27,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     title: "Zişan Dekor",
     description: "Deniz manzaralı romantik düğün organizasyonu",
     category: "düğün",
-    imageUrl: "/images/zisandekor/DSC05420-min.jpeg",
+    imageUrl: "/images/zisandekor/DSC05420-min.jpg",
     features: [
       "4*4 METRE AYARLANABİLİR BEYAZ PERDE KURULUMU",
       "2*2 METRE ÇİÇEK TAG KURULUMU ",
@@ -42,10 +42,10 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti...",
     gallery: [
       { type: 'image', url: '/images/zisandekor/DSC05420-min.jpg' },
-      { type: 'image', url: '/images/zisandekor/DSC05811-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05820-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05831-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05926-min.jpeg' }
+      { type: 'image', url: '/images/zisandekor/DSC05811-min.jpg' },
+      { type: 'image', url: '/images/zisandekor/DSC05820-min.jpg' },
+      { type: 'image', url: '/images/zisandekor/DSC05831-min.jpg' },
+      { type: 'image', url: '/images/zisandekor/DSC05926-min.jpg' }
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
