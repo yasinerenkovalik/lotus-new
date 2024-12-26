@@ -171,7 +171,37 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ekstra: "Fotoğraf Çekimi",
     duration: "Kişiye Özel Neon Yazı",
     location: "Karşılama Panosu"
-  }
+  },
+  6: {
+    id: 1,
+    title: "Zişan Dekor",
+    description: "Deniz manzaralı romantik düğün organizasyonu",
+    category: "düğün",
+    imageUrl: "/images/zisandekor/DSC05420-min.jpeg",
+    features: [
+      "4*4 METRE AYARLANABİLİR BEYAZ PERDE KURULUMU",
+      "2*2 METRE ÇİÇEK TAG KURULUMU ",
+      "4 ADET BEYAZ AHŞAP SÜTUN",
+      "2 ADET PLEKSİ ŞEFFAF ŞAMDAN",
+      "1 ADET BEYAZ AHŞAP ORTA SEHPA",
+      "NEON YAZI (KİŞİYE ÖZEL TASARLANABİLRİ)",
+      "SÖZ TEPSİ SETİ",
+      "DAMAT KAHVE SETİ",
+      "2 ADET ŞEFFAF PLEKSİ SANDALYE"
+    ],
+    longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti...",
+    gallery: [
+      { type: 'image', url: '/images/zisandekor/DSC05420-min.jpeg' },
+      { type: 'image', url: '/images/zisandekor/DSC05811-min.jpeg' },
+      { type: 'image', url: '/images/zisandekor/DSC05820-min.jpeg' },
+      { type: 'image', url: '/images/zisandekor/DSC05831-min.jpeg' },
+      { type: 'image', url: '/images/zisandekor/DSC05926-min.jpeg' }
+    ],
+    pricing: "En uygun fiyatlar için iletişime geçiniz",
+    ekstra: "Fotoğraf Çekimi",
+    duration: "Kişiye Özel Neon Yazı",
+    location: "Karşılama Panosu"
+  },
 };
 
 export const organizations = Object.values(organizationDetails);
