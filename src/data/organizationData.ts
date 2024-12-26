@@ -26,7 +26,7 @@ export const organizations: Organization[] = [
   },
   {
     id: 2,
-    title: "Kır Düğünü",
+    title: "Hazeran Dekor",
     description: "Doğayla iç içe masalsı düğün organizasyonu",
     category: "düğün",
     imageUrl: "/images/HazeranDekor/image00001.jpeg"
@@ -157,7 +157,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   },
   2: {
     id: 2,
-    title: "Hazeran Dekor",
+    title: "Güneş Dekor",
     description: "Doğayla iç içe masalsı düğün organizasyonu",
     category: "düğün",
     imageUrl: "/images/HazeranDekor/image00001.jpeg",
@@ -184,7 +184,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   },
   3: {
     id: 3,
-    title: "Güneş Dekor",
+    title: "Hazeran Dekor",
     description: "Lüks otel salonlarında şık düğün organizasyonu",
     category: "düğün",
     imageUrl: "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.34.05.jpeg",
