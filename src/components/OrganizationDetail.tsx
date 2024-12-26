@@ -4,6 +4,45 @@ import { organizationDetails } from '../data/organizationData';
 import ImageModal from './ImageModal';
 import '../styles/OrganizationDetail.css';
 
+interface MediaItem {
+  type: 'image' | 'video';
+  url: string;
+}
+
+function GalleryItem({ item, onImageClick }: { 
+  item: MediaItem, 
+  onImageClick: (url: string) => void 
+}) {
+  if (item.type === 'image') {
+    return (
+      <img 
+        src={item.url} 
+        alt="Galeri görüntüsü"
+        onClick={() => onImageClick(item.url)}
+        className="gallery-image"
+      />
+    );
+  }
+
+  return (
+    <div 
+      className="video-thumbnail"
+      onClick={() => onImageClick(item.url)}
+    >
+      <video 
+        src={item.url} 
+        className="gallery-video"
+        preload="metadata"
+        poster={item.url + '#t=0.1'}
+        muted
+      />
+      <div className="play-button">
+        <i className="fas fa-play"></i>
+      </div>
+    </div>
+  );
+}
+
 function OrganizationDetail() {
   const { id } = useParams();
   const organizationId = Number(id);
@@ -67,13 +106,11 @@ function OrganizationDetail() {
         <section className="detail-gallery">
           <h2>Galeri</h2>
           <div className="gallery-grid">
-            {details.gallery.map((image, index) => (
-              <img 
-                key={index} 
-                src={image} 
-                alt={`${details.title} ${index + 1}`}
-                onClick={() => setSelectedImage(image)}
-                className="gallery-image"
+            {details.gallery.map((item, index) => (
+              <GalleryItem 
+                key={index}
+                item={item}
+                onImageClick={setSelectedImage}
               />
             ))}
           </div>

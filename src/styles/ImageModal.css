@@ -59,4 +59,10 @@
     top: -40px;
     right: 0;
   }
+}
+
+.modal-video {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
 } 
