@@ -184,10 +184,10 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   },
   3: {
     id: 3,
-    title: "Otel Düğünü",
+    title: "Güneş Dekor",
     description: "Lüks otel salonlarında şık düğün organizasyonu",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069",
+    imageUrl: "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.34.05.jpeg",
     features: [
       "5 yıldızlı otel konforu",
       "Lüks salon dekorasyonu",
@@ -197,9 +197,12 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ],
     longDescription: "Lüks ve konforun bir araya geldiği 5 yıldızlı otellerimizde, her detayı düşünülmüş muhteşem bir düğün organizasyonu... Profesyonel ekibimiz ve üst düzey hizmet anlayışımızla hayallerinizi gerçeğe dönüştürüyoruz.",
     gallery: [
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069",
-      "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070",
-      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070"
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.29.57 (1).jpeg",
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.34.05.jpeg",
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.35.16.jpeg",
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.35.19.jpeg",
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.39.16.jpeg",
+      "/images/gunesdekor/WhatsApp Image 2024-12-26 at 09.39.17.jpeg",
     ],
     pricing: "40.000₺'den başlayan fiyatlarla",
     ekstra: "100-1000 kişi",
