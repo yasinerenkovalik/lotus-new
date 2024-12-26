@@ -10,44 +10,51 @@ export const galleryData: GalleryItem[] = [
   {
     id: 1,
     title: "Romantik Düğün Organizasyonu",
-    description: "Sahilde unutulmaz bir düğün töreni",
+    description: "Düğün törende güzel bir fotoğraf",
     category: "düğün",
-    imageUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070"
+    imageUrl: "/images/galery/image00004.jpeg"
   },
   {
     id: 2,
     title: "Özel Nişan Töreni",
-    description: "Lüks mekanda şık bir nişan organizasyonu",
+    description: "Nişanlarınızı unutulmaz yapalım",
     category: "nişan",
-    imageUrl: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070"
+    imageUrl: "/images/galery/image00023.jpeg"
   },
   {
     id: 3,
     title: "Geleneksel Kına Gecesi",
     description: "Geleneklerimizi yaşatan özel kına organizasyonu",
     category: "kına",
-    imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069"
+    imageUrl: "/images/galery/image00029.jpeg"
   },
   {
     id: 4,
-    title: "Sünnet Düğünü",
-    description: "Unutulmaz sünnet organizasyonu",
-    category: "sünnet",
-    imageUrl: "https://images.unsplash.com/photo-1472653816316-3ad6f10a6592?q=80&w=2069"
+    title: "Hediyelik eşya ",
+    description: "Unutulmaz günlerinizde hediyelik eşya organizasyonu",
+    category: "özel",
+    imageUrl: "/images/galery/image00032.jpeg"
   },
   {
     id: 5,
-    title: "Doğum Günü Partisi",
+    title: "Nişan Günü Partisi",
     description: "Eğlenceli doğum günü organizasyonu",
-    category: "doğum günü",
-    imageUrl: "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=2069"
+    category: "nişan",
+    imageUrl: "/images/galery/image00036.jpeg"
   },
   {
     id: 6,
-    title: "Baby Shower",
-    description: "Özel baby shower organizasyonu",
+    title: "İsteme",
+    description: "İsteme organizasyonu",
     category: "özel",
-    imageUrl: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070"
+    imageUrl: "/images/galery/WhatsApp Image 2024-12-26 at 09.29.57.jpeg"
+  },
+  {
+    id: 7,
+    title: "Nişan ",
+    description: "Özel nişan  organizasyonu",
+    category: "nişan",
+    imageUrl: "/images/galery/WhatsApp Image 2024-12-26 at 09.36.49.jpeg"
   }
 ];
 
