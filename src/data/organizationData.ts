@@ -144,64 +144,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     duration: "Kişiye Özel Neon Yazı",
     location: "Karşılama Panosu"
   },
-  5: {
-    id: 5,
-    title: "Vintage Dekor",
-    description: "Vintage tarzda nişan konsepti",
-    category: "nişan",
-    imageUrl: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2070",
-    features: [
-      "4*4 METRE BEJ RENK PERDE",
-      "2*2 METRE KURU GÜL DUVAR",
-      "4 ADET ANTİK GÖRÜNÜMLÜ SÜTUN",
-      "2 ADET PİRİNÇ ŞAMDAN",
-      "1 ADET ANTİK ORTA MASA",
-      "NEON YAZI (KİŞİYE ÖZEL)",
-      "SÖZ TEPSİ SETİ",
-      "DAMAT KAHVE SETİ",
-      "2 ADET VINTAGE SANDALYE"
-    ],
-    longDescription: "Nostaljik detaylar ve vintage dokunuşlarla hazırlanan bu konsept, zamansız bir şıklık sunuyor. Kuru güller ve antik aksesuarlarla romantik bir atmosfer yaratın.",
-    gallery: [
-      { type: 'image', url: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2070' },
-      { type: 'image', url: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070' },
-      { type: 'image', url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069' }
-    ],
-    pricing: "En uygun fiyatlar için iletişime geçiniz",
-    ekstra: "Fotoğraf Çekimi",
-    duration: "Kişiye Özel Neon Yazı",
-    location: "Karşılama Panosu"
-  },
-  6: {
-    id: 1,
-    title: "Zişan Dekor",
-    description: "Deniz manzaralı romantik düğün organizasyonu",
-    category: "düğün",
-    imageUrl: "/images/zisandekor/DSC05420-min.jpeg",
-    features: [
-      "4*4 METRE AYARLANABİLİR BEYAZ PERDE KURULUMU",
-      "2*2 METRE ÇİÇEK TAG KURULUMU ",
-      "4 ADET BEYAZ AHŞAP SÜTUN",
-      "2 ADET PLEKSİ ŞEFFAF ŞAMDAN",
-      "1 ADET BEYAZ AHŞAP ORTA SEHPA",
-      "NEON YAZI (KİŞİYE ÖZEL TASARLANABİLRİ)",
-      "SÖZ TEPSİ SETİ",
-      "DAMAT KAHVE SETİ",
-      "2 ADET ŞEFFAF PLEKSİ SANDALYE"
-    ],
-    longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti...",
-    gallery: [
-      { type: 'image', url: '/images/zisandekor/DSC05420-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05811-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05820-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05831-min.jpeg' },
-      { type: 'image', url: '/images/zisandekor/DSC05926-min.jpeg' }
-    ],
-    pricing: "En uygun fiyatlar için iletişime geçiniz",
-    ekstra: "Fotoğraf Çekimi",
-    duration: "Kişiye Özel Neon Yazı",
-    location: "Karşılama Panosu"
-  },
+ 
 };
 
 export const organizations = Object.values(organizationDetails);
