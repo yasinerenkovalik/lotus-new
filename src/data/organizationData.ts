@@ -22,7 +22,7 @@ export const organizations: Organization[] = [
     title: "Zişan Dekor",
     description: "Deniz manzaralı romantik düğün organizasyonu",
     category: "düğün",
-    imageUrl: "/images/zisandekor/DSC05820-min.jpeg"
+    imageUrl: "/images/zisandekor/DSC05420-min.jpeg"
   },
   {
     id: 2,
