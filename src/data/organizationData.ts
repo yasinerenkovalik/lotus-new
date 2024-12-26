@@ -41,7 +41,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     ],
     longDescription: "Zarafetin ve doğallığın buluştuğu bu eşsiz nişan konsepti...",
     gallery: [
-      { type: 'image', url: '/images/zisandekor/DSC05420-min.jpeg' },
+      { type: 'image', url: '/images/zisandekor/DSC05420-min.jpg' },
       { type: 'image', url: '/images/zisandekor/DSC05811-min.jpeg' },
       { type: 'image', url: '/images/zisandekor/DSC05820-min.jpeg' },
       { type: 'image', url: '/images/zisandekor/DSC05831-min.jpeg' },
