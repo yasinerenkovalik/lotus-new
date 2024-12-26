@@ -1,8 +1,4 @@
-import zisandekor1 from '../assets/images/zisandekor/DSC05420-min.jpeg';
-import zisandekor2 from '../assets/images/zisandekor/DSC05811-min.jpeg';
-import zisandekor3 from '../assets/images/zisandekor/DSC05820-min.jpeg';
-import zisandekor4 from '../assets/images/zisandekor/DSC05831-min.jpeg';
-import zisandekor5 from '../assets/images/zisandekor/DSC05926-min.jpeg';
+
 
 export interface Organization {
   id: number;
