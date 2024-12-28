@@ -25,7 +25,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   1: {
     id: 1,
     title: "Zişan Dekor",
-    description: "Deniz manzaralı romantik düğün organizasyonu",
+    description: "Yeşil ve beyazın muhteşem uyumu yaz",
     category: "düğün",
     imageUrl: "/images/zisandekor/DSC05420-min.jpg",
     features: [
@@ -55,7 +55,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   2: {
     id: 2,
     title: "Güneş Dekor",
-    description: "Modern ve şık nişan organizasyonu",
+    description: "Sadelikten yana olanlara… yaz",
     category: "nişan",
     imageUrl: "/images/HazeranDekor/image00001.jpeg",
     features: [
