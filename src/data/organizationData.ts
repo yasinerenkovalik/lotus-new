@@ -118,7 +118,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   4: {
     id: 4,
     title: "Lalem Dekor",
-    description: "Modern çizgiler ve minimalist tasarımın buluştuğu bu konsept, sade ve şık bir nişan organizasyonu sunuyor. Siyah ve beyazın uyumu, orkidelerin zarafeti ile tamamlanıyor.",
+    description: "Minimalist ve şık nişan tasarımı",
     category: "nişan",
     imageUrl: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070",
     features: [
