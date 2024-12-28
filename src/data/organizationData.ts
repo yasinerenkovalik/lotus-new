@@ -55,7 +55,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   2: {
     id: 2,
     title: "Güneş Dekor",
-    description: "Sadelikten yana olanlara… yaz",
+    description: "Sadelikten yana olanlara… ",
     category: "nişan",
     imageUrl: "/images/HazeranDekor/image00001.jpeg",
     features: [
@@ -118,7 +118,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
   4: {
     id: 4,
     title: "Lalem Dekor",
-    description: "Minimalist ve şık nişan tasarımı",
+    description: "Modern çizgiler ve minimalist tasarımın buluştuğu bu konsept, sade ve şık bir nişan organizasyonu sunuyor. Siyah ve beyazın uyumu, orkidelerin zarafeti ile tamamlanıyor.",
     category: "nişan",
     imageUrl: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070",
     features: [
