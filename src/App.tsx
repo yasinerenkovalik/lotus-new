@@ -4,7 +4,9 @@ import Contact from './pages/Contact';
 import Gallery from './components/Gallery';
 import Organizations from './pages/Organizations';
 import OrganizationDetail from './components/OrganizationDetail';
+
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

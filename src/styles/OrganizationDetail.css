@@ -260,3 +260,30 @@
   background: var(--accent);
   transform: translate(-50%, -50%) scale(1.1);
 } 
+
+/* Dark mode için özel stiller */
+[data-theme="dark"] .organization-detail-container {
+  background-color: var(--bg-light);  /* Ana arka planı koyu yap */
+}
+
+[data-theme="dark"] .detail-content section {
+  background: var(--card-bg);
+}
+
+[data-theme="dark"] .detail-content h2 {
+  color: var(--secondary);  /* Başlıklar renkli kalsın */
+}
+
+[data-theme="dark"] .detail-content p,
+[data-theme="dark"] .detail-features li {
+  color: #fff !important;  /* İçerik metinleri beyaz olsun */
+}
+
+[data-theme="dark"] .info-item {
+  background: var(--card-bg);
+  color: #fff;  /* Bilgi metinleri beyaz olsun */
+}
+
+[data-theme="dark"] .detail-description p {
+  color: #fff !important;  /* Açıklama metni beyaz olsun */
+} 

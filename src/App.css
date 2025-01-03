@@ -215,11 +215,11 @@ body, html {
   margin-top: 0;
   position: relative;
   overflow: hidden;
-  background-image: 
-                    url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2198&auto=format&fit=crop');
+  background-image: url('/images/25-7-2023-fwebsite--scaled.jpg.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: var(--bg-light);
   padding-top: 80px;
 }
 
