@@ -223,6 +223,13 @@ body, html {
   padding-top: 80px;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* Mobilde tam doldursun */
+    background-position: center center;
+  }
+}
+
 .hero-content {
   width: 90%;
   max-width: 900px;
