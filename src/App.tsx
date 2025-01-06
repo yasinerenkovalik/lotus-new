@@ -60,7 +60,7 @@ function HomePage() {
       <div className="hero">
         <div className="hero-content">
           <h1>Unutulmaz Anlar İçin Mükemmel Organizasyonlar</h1>
-          <p>Düğün, nişan, kurumsal etkinlikler ve daha fazlası...</p>
+          <p>Düğün, nişan, doğum günü  etkinlikler ve daha fazlası...</p>
           <button 
             className="cta-button"
             onClick={handleWhatsAppClick}
