@@ -24,7 +24,8 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div className="logo">
             <h1>Lotus Organizasyon</h1>
           </div>
-          <meta name="description" content="Lotus Organizasyon olarak, Kocaeli’de düğün, nişan ve özel organizasyonlar için profesyonel hizmet sunuyoruz. Hemen detayları inceleyin!">
+          <link rel="icon" href="favicon.ico" type="image/x-icon"></link>
+          <meta name="description" content="Lotus Organizasyon olarak, Kocaeli’de düğün, nişan ve özel organizasyonlar için profesyonel hizmet sunuyoruz. Hemen detayları inceleyin!"> </meta>
 
           <button 
             className="mobile-menu-btn"
