@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Menüyü kapatma fonksiyonu
+  
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
