@@ -77,6 +77,9 @@ body, html {
 
 .logo a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo h1 {
@@ -647,4 +650,15 @@ body, html {
 @font-face {
   font-family: 'Playwrite CO Guides';
   src: url('/fonts/PlaywriteCOGuides.ttf') format('truetype');
+}
+
+/* Logo stili için */
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+  transform: scale(1.1);
 }

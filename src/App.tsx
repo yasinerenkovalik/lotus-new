@@ -4,6 +4,7 @@ import Contact from './pages/Contact';
 import Gallery from './components/Gallery';
 import Organizations from './pages/Organizations';
 import OrganizationDetail from './components/OrganizationDetail';
+import QuoteRequest from './pages/QuoteRequest';
 
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -180,6 +181,7 @@ function App() {
             <Route path="/organizations" element={<Organizations />} />
             <Route path="/organizations/:id" element={<OrganizationDetail />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/teklif-al" element={<QuoteRequest />} />
           </Routes>
         </Layout>
       </div>
