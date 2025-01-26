@@ -49,12 +49,19 @@ function Navbar() {
       />
       <meta name="twitter:image" content="https://lotusorganizasyon.com/images/featured.jpg" />
     </Helmet>
+
       <div className="logo">
         <Link to="/">
           <img src="/images/lotus-logo.svg" alt="Lotus Logo" className="logo-icon" />
           <h1>Lotus Organizasyon</h1>
         </Link>
       </div>
+
+      
+      <NavLink to="/"  className="logo" end>
+        Lotus Organizasyon
+      </NavLink>
+
       
       {isMobile && (
         <button 

@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Menüyü kapatma fonksiyonu
+  
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -25,7 +25,9 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div className="logo">
             <h1>Lotus Organizasyon</h1>
           </div>
-          
+
+          <meta name="description" content="Lotus Organizasyon olarak, Kocaeli’de düğün, nişan ve özel organizasyonlar için profesyonel hizmet sunuyoruz. Hemen detayları inceleyin!"> </meta>
+
           <button 
             className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
