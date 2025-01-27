@@ -19,14 +19,14 @@ function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"></link>
+
       <header className="header">
         <nav className="navbar">
           <div className="logo">
             <h1>Lotus Organizasyon</h1>
           </div>
 
-          <meta name="description" content="Lotus Organizasyon olarak, Kocaeli’de düğün, nişan ve özel organizasyonlar için profesyonel hizmet sunuyoruz. Hemen detayları inceleyin!"> </meta>
+          <meta name="description" content="Lotus Organizasyon olarak, Kocaeli’de düğün, nişan ve özel organizasyonlar için profesyonel hizmet sunuyoruz. Hemen detayları inceleyin!" />
 
           <button 
             className="mobile-menu-btn"
