@@ -1,6 +1,50 @@
 
   
  
+ @media print {
+  body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .top-section,
+  .middle-section,
+  .bottom-section,
+  .signature {
+    flex-direction: column;
+  }
+
+  .customer-info,
+  .date-info,
+  .material-table,
+  .extra-section,
+  .payment,
+  .whatsapp,
+  .signature div {
+    width: 100% !important;
+  }
+
+  .material-table {
+    font-size: 10px;
+  }
+
+  input, textarea {
+    font-size: 10px;
+  }
+
+  .download-btn {
+    display: none; /* Yazdırma sırasında butonu gizle */
+  }
+}
+
   .download-btn {
     margin-bottom: 15px;
     padding: 10px 20px;
