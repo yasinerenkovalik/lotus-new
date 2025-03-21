@@ -32,7 +32,7 @@ const FormPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="form-order">
       <button onClick={handleDownloadPDF} className="download-btn">PDF İndir</button>
       <div ref={formRef} className="form-container">
         {/* EN ÜSTTEKİ LOGO VE İLETİŞİM BİLGİLERİ */}
