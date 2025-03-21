@@ -1,8 +1,6 @@
 
   
-  input[type="time"]::-webkit-datetime-edit-ampm-field {
-    display: none;
-  }
+ 
   .download-btn {
     margin-bottom: 15px;
     padding: 10px 20px;
@@ -32,6 +30,7 @@
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
+    color:#0A1455
   }
   
   .customer-info,
@@ -39,6 +38,7 @@
     border: 1px solid navy;
     padding: 10px;
     width: 50%;
+    color: #0A1455;
   }
   
   .customer-info input,
@@ -52,6 +52,7 @@
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    color: #0A1455;
   }
   
   .material-table {
@@ -100,6 +101,7 @@
     justify-content: space-between;
     align-items: stretch;
     margin-bottom: 10px;
+    color: #0A1455;
   }
   
   .whatsapp {
@@ -131,6 +133,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    color: #0A1455;
   }
   
   .signature div {
@@ -144,6 +147,8 @@
     box-sizing: border-box;
     height: 40px;
     overflow: visible;
+    background-color: white;
+    color: blue; /* Yazı rengini mavi yapar */
   }
   .header-section {
     display: flex;
@@ -173,6 +178,7 @@
   
   .address {
     font-size: 14px;
+    color: #0A1455;
   }
   
   .title {
@@ -180,18 +186,26 @@
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
+    color: #0A1455;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Mobilde yatay kaydırmaya izin ver */
+  }
+  
+  html, body {
+    width: 100%;
   }
   
   .form-container {
-    width: 794px; /* A4 genişliği px cinsinden (72 DPI) */
-    min-height: 1123px; /* A4 yüksekliği */
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    color: #000;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: auto; /* İçeriğin dışarı taşması durumunda yatay kaydırma */
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ccc;
-    position: relative;
+    padding: 40px 20px 20px 20px;
+    background-color: white;
   }
+  
+
   
