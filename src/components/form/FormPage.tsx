@@ -4,55 +4,41 @@ import jsPDF from "jspdf";
 import "./FormPage.css";
 import logo from "./logo-placeholder.png";
 
-const FormPage = () => {
-  const formRef = useRef();
+const FormPage: React.FC = () => {
+  const formRef = useRef<HTMLDivElement>(null); // ✅ Tip belirledik
 
   const handleDownloadPDF = () => {
+    if (!formRef.current) return;
+
     html2canvas(formRef.current, { scale: 2, useCORS: true }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF("p", "mm", "a4");
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
-  
-      // Görselin boyutları
+
       const imgWidth = canvas.width;
       const imgHeight = canvas.height;
-  
-      // Oranı koruyarak PDF'e sığdırmak için ölçekleme
+
       const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
       const finalWidth = imgWidth * ratio;
       const finalHeight = imgHeight * ratio;
-  
+
       const marginX = (pdfWidth - finalWidth) / 2;
       const marginY = (pdfHeight - finalHeight) / 2;
-  
+
       pdf.addImage(imgData, "PNG", marginX, marginY, finalWidth, finalHeight);
       pdf.save("lotus-form.pdf");
     });
   };
-  const formatDate = (inputDate) => {
-    if (!inputDate) return "";
-    const [year, month, day] = inputDate.split("-");
-    return `${day}.${month}.${year}`;
-  };
-  
-  const formatTime = (inputTime) => {
-    if (!inputTime) return "";
-    return inputTime; // Zaten input type="time" 24 saat formatında çalışır
-  };
-  
-  
-  
-  
+
   return (
     <div>
       <button onClick={handleDownloadPDF} className="download-btn">PDF İndir</button>
       <div ref={formRef} className="form-container">
-
         {/* EN ÜSTTEKİ LOGO VE İLETİŞİM BİLGİLERİ */}
         <div className="header-section">
           <div className="logo-container">
-            <img  alt="Logo" src={logo} />
+            <img alt="Logo" src={logo} />
           </div>
           <div className="info-container">
             <div><strong>ÇAĞRI MERKEZİ</strong></div>
@@ -69,33 +55,32 @@ const FormPage = () => {
         <div className="top-section">
           <div className="customer-info">
             <div><strong>MÜŞTERİ ADI:</strong><input type="text" className="width-10" /></div>
-            <div><strong>ADRES:</strong><textarea rows="3" /></div>
+            <div><strong>ADRES:</strong><textarea rows={3} /></div>
             <div>
               <strong>TELEFON 1:</strong> <input type="text" />
               <strong> TELEFON 2:</strong> <input type="text" />
             </div>
           </div>
           <div className="date-info">
-  <div>
-    <label>Kurulum Tarihi</label>
-    <input type="date" />
-    <label>Saat</label>
-    <input type="time" step="1" />
-  </div>
-  <div>
-    <label>Bitiş Tarihi</label>
-    <input type="date" />
-    <label>Saat</label>
-    <input type="time" step="1" />
-  </div>
-  <div>
-    <label>İşlem Bitiş Tarihi</label>
-    <input type="date" />
-    <label>Saat</label>
-    <input type="time" step="1" />
-  </div>
-</div>
-
+            <div>
+              <label>Kurulum Tarihi</label>
+              <input type="date" />
+              <label>Saat</label>
+              <input type="time" step="1" />
+            </div>
+            <div>
+              <label>Bitiş Tarihi</label>
+              <input type="date" />
+              <label>Saat</label>
+              <input type="time" step="1" />
+            </div>
+            <div>
+              <label>İşlem Bitiş Tarihi</label>
+              <input type="date" />
+              <label>Saat</label>
+              <input type="time" step="1" />
+            </div>
+          </div>
         </div>
 
         {/* MALZEME LİSTESİ + EKSTRA BİLGİLER */}
@@ -141,7 +126,7 @@ const FormPage = () => {
             </div>
             <div className="note">
               <label>MÜŞTERİ NOT:</label>
-              <textarea rows="5" />
+              <textarea rows={5} />
             </div>
           </div>
         </div>
@@ -161,11 +146,11 @@ const FormPage = () => {
         <div className="signature">
           <div>
             <label>Firma Yetkilisi Ad Soyad İmza</label>
-            <textarea rows="3" />
+            <textarea rows={3} />
           </div>
           <div>
             <label>Müşteri Ad Soyad İmza</label>
-            <textarea rows="3" />
+            <textarea rows={3} />
           </div>
         </div>
       </div>
