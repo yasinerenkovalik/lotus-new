@@ -132,11 +132,11 @@ function HomePage() {
             <p>Mutlu Müşteri</p>
           </div>
           <div className="stat-item">
-            <h3>50+</h3>
+            <h3>5+</h3>
             <p>Uzman Personel</p>
           </div>
           <div className="stat-item">
-            <h3>10+</h3>
+            <h3>15+</h3>
             <p>Yıllık Deneyim</p>
           </div>
         </div>

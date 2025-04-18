@@ -79,9 +79,6 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       { type: 'image', url: '/images/HazeranDekor/image00016.jpeg' },
       { type: 'image', url: '/images/HazeranDekor/image00017.jpeg' },
       { type: 'image', url: '/images/HazeranDekor/image00025.jpeg' },
-      { type: 'image', url: '/images/HazeranDekor/WhatsApp Image 2025-01-03 at 16.01.46 (1).jpeg' },
-      { type: 'image', url: '/images/HazeranDekor/WhatsApp Image 2025-01-03 at 16.01.46.jpeg' },
-      { type: 'video', url: '/images/HazeranDekor/WhatsApp Video 2025-01-03 at 16.00.08.mp4' }
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
@@ -142,7 +139,91 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
       { type: 'video', url: '/images/zisandekor/WhatsApp Video 2024-12-26 at 09.39.56.mp4' },
       { type: 'image', url: '/images/lalemdekor/WhatsApp Image 2024-12-26 at 09.39.38.jpeg' },
       { type: 'image', url: '/images/lalemdekor/WhatsApp Image 2024-12-26 at 09.39.38.jpeg' },
-      { type: 'image', url: '/images/lalemdekor/WhatsApp Image 2024-12-26 at 09.39.51.jpeg' }
+      { type: 'image', url: '/images/lalemdekor/WhatsApp Image 2024-12-26 at 09.39.51.jpeg' },
+      { type: 'image', url: '/images/HazeranDekor/WhatsApp Image 2025-01-03 at 16.01.46 (1).jpeg' },
+      { type: 'image', url: '/images/HazeranDekor/WhatsApp Image 2025-01-03 at 16.01.46.jpeg' },
+      { type: 'video', url: '/images/HazeranDekor/WhatsApp Video 2025-01-03 at 16.00.08.mp4' }
+    ],
+    pricing: "En uygun fiyatlar için iletişime geçiniz",
+    ekstra: "Fotoğraf Çekimi",
+    duration: "Kişiye Özel Neon Yazı",
+    location: "Karşılama Panosu"
+  },
+  5: {
+    id: 5,
+    title: "Canli Çiçek Dekor",
+    description: "Minimalist ve şık nişan tasarımı",
+    category: "nişan",
+    imageUrl: "/images/canlicicek/WhatsApp Image 2025-04-18 at 16.59.03.jpeg",
+    features: [
+      "Canlı çiçekler ile her eve ve zevke uygun tasarımlar oluşturuyoruz",
+      
+    ],
+    longDescription: "Modern çizgiler ve minimalist tasarımın buluştuğu bu konsept, sade ve şık bir nişan organizasyonu sunuyor.",
+    gallery: [
+      { type: 'image', url: '/images/canlicicek/WhatsApp Image 2025-04-18 at 16.59.03 (1).jpeg' },
+      { type: 'image', url: '/images/canlicicek/WhatsApp Image 2025-04-18 at 16.59.03.jpeg' },
+      { type: 'video', url: '/images/canlicicek/WhatsApp Video 2025-04-18 at 16.59.03.mp4' },
+      
+    ],
+    pricing: "En uygun fiyatlar için iletişime geçiniz",
+    ekstra: "Fotoğraf Çekimi",
+    duration: "Kişiye Özel Neon Yazı",
+    location: "Karşılama Panosu"
+  },
+  6: {
+    id: 6,
+    title: "Afrodit Dekor",
+    description: "Yeşil ve beyazın muhteşem uyumu ",
+    category: "nişan",
+    imageUrl: "/images/afrodit/WhatsApp Image 2025-04-18 at 17.05.47.jpeg",
+    features: [
+      "Beyaz perde kurulumu" ,
+"Canlı çiçek ve dallarla şık tasarım",
+"4 adet ahşap sütun",
+"2 adet şeffaf sandalye ",
+"Orta sehpa ",
+"Söz tepsi seti",
+"Damat kahve seti",
+"2 adet saksıda canlı çiçek" ,
+"Spot ışıklandırmalar",
+      
+    ],
+    longDescription: "Modern çizgiler ve minimalist tasarımın buluştuğu bu konsept, sade ve şık bir nişan organizasyonu sunuyor.",
+    gallery: [
+      { type: 'image', url: '/images/afrodit/WhatsApp Image 2025-04-18 at 17.05.47.jpeg' },
+      { type: 'video', url: '/images/afrodit/WhatsApp Video 2025-04-18 at 17.05.47.mp4' },
+      
+    ],
+    pricing: "En uygun fiyatlar için iletişime geçiniz",
+    ekstra: "Fotoğraf Çekimi",
+    duration: "Kişiye Özel Neon Yazı",
+    location: "Karşılama Panosu"
+  },
+  7: {
+    id: 7,
+    title: "Aşk Bahçesi",
+    description: "Minimalist ve şık nişan tasarımı",
+    category: "nişan",
+    imageUrl: "/images/askbahcesi/WhatsApp Image 2025-04-18 at 17.11.48.jpeg",
+    features: [
+      "Canlı çiçekler ile her eve ve zevke uygun tasarımlar oluşturuyoruz",
+     " Beyaz perde kurulumu ",
+"Renkli yapay çiçekler",
+"4 adet ahşap sütun",
+"2 adet şeffaf sandalye ",
+"Orta sehpa ",
+"Söz tepsi seti",
+"Damat kahve seti",
+"2 adet saksıda renkli çiçek ",
+"Spot ışıklandırmalar"
+      
+    ],
+    longDescription: "Doğanın tazeliği ve çiçeklerin romantizmiyle çevrili bu köşe, ‘Daima Aşkla’ sözüne ilham oluyor. Modern dokunuşlarla süslenmiş bu kemerli dekor, özel anlarınızı unutulmaz kılıyor.",
+    gallery: [
+      { type: 'image', url: '/images/askbahcesi/WhatsApp Image 2025-04-18 at 17.11.48.jpeg' },
+      { type: 'video', url: '/images/askbahcesi/WhatsApp Video 2025-04-18 at 17.11.49.mp4' },
+      
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
     ekstra: "Fotoğraf Çekimi",
