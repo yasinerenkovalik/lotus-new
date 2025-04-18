@@ -192,7 +192,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     longDescription: "Modern çizgiler ve minimalist tasarımın buluştuğu bu konsept, sade ve şık bir nişan organizasyonu sunuyor.",
     gallery: [
       { type: 'image', url: '/images/afrodit/WhatsApp Image 2025-04-18 at 17.05.47.jpeg' },
-      { type: 'video', url: '/images/afrodit/WhatsApp Video 2025-04-18 at 17.05.47.mp4' },
+      // { type: 'video', url: '/images/afrodit/WhatsApp Video 2025-04-18 at 17.05.47.mp4' },
       
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
@@ -222,7 +222,7 @@ export const organizationDetails: Record<number, OrganizationDetail> = {
     longDescription: "Doğanın tazeliği ve çiçeklerin romantizmiyle çevrili bu köşe, ‘Daima Aşkla’ sözüne ilham oluyor. Modern dokunuşlarla süslenmiş bu kemerli dekor, özel anlarınızı unutulmaz kılıyor.",
     gallery: [
       { type: 'image', url: '/images/askbahcesi/WhatsApp Image 2025-04-18 at 17.11.48.jpeg' },
-      { type: 'video', url: '/images/askbahcesi/WhatsApp Video 2025-04-18 at 17.11.49.mp4' },
+     /*{ type: 'video', url: '/images/askbahcesi/WhatsApp Video 2025-04-18 at 17.11.49.mp4' },*/
       
     ],
     pricing: "En uygun fiyatlar için iletişime geçiniz",
